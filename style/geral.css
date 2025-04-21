@@ -74,6 +74,20 @@ section {
     margin: 1rem 0;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 .texto {
     font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .texto {
+        font-size: 15px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
 }
