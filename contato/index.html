@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Contato</title>
+
+		<link rel="stylesheet" href="../style/contato.css" />
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="menus">
+				<li class="item">
+					<a href="../index.html" class="link-nav">Home</a>
+				</li>
+				<li class="item">
+					<a
+						href="../pdf/Currículo Guilherme G. Suave.pdf"
+						class="link-nav"
+						download="Curriculo Guilherme Suave"
+						>Currículo</a
+					>
+				</li>
+				<li class="item">
+					<a
+						href="https://github.com/GGSuave"
+						class="link-nav"
+						target="_blank"
+						rel="external"
+						>GitHub</a
+					>
+				</li>
+				<li class="item">
+					<a
+						href="./index.html"
+						class="link-nav selecionado"
+						>Serviços</a
+					>
+				</li>
+			</nav>
+		</header>
+
+		<main>
+			<section class="flex-col w-full centralizado caixa">
+				<div class="tamanho-padrao-caixa my-1">
+					<h1 class="titulo">Contato</h1>
+					<form class="Contato flex-col centralizado">
+						<div class="flex w-full">
+							<div class="form-divisao">
+								<label for="nome" class="label"
+									>Nome
+									<span class="required"
+										>*</span
+									></label
+								>
+								<div class="div-input">
+									<input
+										type="text"
+										id="nome"
+										required
+										class="input"
+									/>
+								</div>
+							</div>
+							<div class="form-divisao">
+								<label for="email" class="label"
+									>Email
+									<span class="required"
+										>*</span
+									></label
+								>
+								<div class="div-input">
+									<input
+										type="email"
+										id="email"
+										class="input"
+										required
+									/>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex w-full">
+							<div class="form-divisao">
+								<label for="phone" class="label"
+									>Telefone
+									<span class="required"
+										>*</span
+									></label
+								>
+								<div class="div-input">
+									<input
+										type="tel"
+										id="phone"
+										required
+										class="input"
+										placeholder="(XX) XXXX-XXXX"
+									/>
+								</div>
+							</div>
+							<div class="form-divisao">
+								<label
+									for="tipoPessoa"
+									class="label"
+									>Escolha o tipo de pessoa
+									<span class="required"
+										>*</span
+									></label
+								>
+								<div class="div-input">
+									<select
+										id="tipoPessoa"
+										name="tipoPessoa"
+										class="input"
+										required
+									>
+										<option
+											value="fisica"
+										>
+											Pessoa Física
+										</option>
+										<option
+											value="juridica"
+										>
+											Pessoa
+											Jurídica
+										</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex w-full">
+							<div class="form-divisao">
+								<label
+									for="dataHora"
+									class="label"
+									>Escolha a data e o
+									horário para o
+									atendimento</label
+								>
+								<div class="div-input">
+									<input
+										type="datetime-local"
+										id="dataHora"
+										name="dataHora"
+										class="input"
+										required
+									/>
+								</div>
+							</div>
+							<div class="form-divisao">
+								<label for="plano" class="label"
+									>Plano
+									<span class="required"
+										>*</span
+									></label
+								>
+								<div class="div-input">
+									<select
+										id="plano"
+										name="plano"
+										class="input"
+										required
+									>
+										<option
+											value="Basic"
+										>
+											Basic
+										</option>
+										<option
+											value="Intermediate"
+										>
+											Intermediate
+										</option>
+										<option
+											value="Premiun"
+										>
+											Premiun
+										</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<button type="submit" class="button">
+							Enviar
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

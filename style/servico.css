@@ -1,0 +1,91 @@
+@import url('geral.css');
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.caixa {
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.link-card {
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+.basic {
+    background: linear-gradient(135deg, rgb(126, 0, 126), rgb(70, 0, 70));
+}
+
+.premium {
+    background: linear-gradient(135deg, #bfa200, #5c007a);
+}
+
+.intermediate {
+    background: linear-gradient(135deg, #00c853, #1a237e);
+}
+
+.link-card:hover {
+    transform: scale(1.015);
+    cursor: pointer;
+}
+
+.titulo-card{
+    text-align: center;
+}
+
+.lista {
+    list-style: none;
+}
+
+.preco-card {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.promo {
+    text-decoration: line-through;
+    color: rgb(121, 121, 121);
+    font-size: 20px;
+}
+
+@media (max-width: 760px) {
+    .caixa{
+        display: flex;
+        flex-direction: column;       
+        margin: 20px; 
+    }
+
+    .link-card {
+        width: 100%;
+    }
+
+    .opcoes{
+        height: 100%;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .pc {
+        display: none;
+    }
+}
+
+@media (min-width: 760px) {
+    .mobile {
+        display: none;
+    }
+
+    .pc {
+        display: flex;
+    }
+}

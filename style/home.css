@@ -1,3 +1,5 @@
+@import url('geral.css');
+
 .sobre-mim{
     display: flex;
     justify-content: center;
@@ -5,10 +7,6 @@
     width: 100%;
     color: white;
     height: 95vh;
-}
-
-.tamanho-padrao-caixa {
-    width: 85%;
 }
 
 .caixa {
@@ -121,14 +119,10 @@
     width: 70%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     
     .sobre-mim{
         flex-direction: column;
-    }
-
-    .tamanho-padrao-caixa {
-        width: 95%;
     }
 
     .caixa{
