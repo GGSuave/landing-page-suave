@@ -13,6 +13,10 @@
     align-items: flex-start;
 }
 
+.paragrafo {
+    margin: 30px 0;
+}
+
 .link-card {
     transition: all 0.3s;
     border-radius: 15px;
@@ -77,6 +81,15 @@
 
     .pc {
         display: none;
+    }
+
+    .titulo {
+        margin: 10px 0;
+    }
+
+    .paragrafo {
+        text-align: center;
+        margin: 10px 0;
     }
 }
 
