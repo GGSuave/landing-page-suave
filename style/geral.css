@@ -95,6 +95,10 @@ section {
 	gap: 1rem;
 }
 
+.justify-end {
+	justify-content: end;
+}
+
 @media (max-width: 768px) {
 	.texto {
 		font-size: 15px;
