@@ -1,76 +1,111 @@
-@import url('geral.css');
-
+@import url("geral.css");
 
 section {
-    height: 95vh;
+	height: 95vh;
+}
+
+.caixa-contato {
+	width: 80%;
+	background-color: white;
+	color: black;
+	border-radius: 15px;
+}
+
+.form {
+	padding: 15px 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.cabecalho-contato {
+	border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+.titulo-contato {
+	margin: 20px 15px;
 }
 
 .titulo {
-    margin: 15px 0;
+	margin: 15px 0;
 }
 
 .label {
-    display: block;
-    margin: 5px 0 0 0;
+	display: block;
+	margin-bottom: 5px;
+	text-indent: 4px;
+}
+
+.label::after {
+	content: "*";
+	color: red;
 }
 
 .input {
-    display: block;
-    width: 80%;
-    padding: 10px;
-    border: 0;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.required {
-    color: red;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 
 .form-divisao {
-    width: 50%; 
-    margin-bottom: 10px;  
+	width: 50%;
 }
 
 .button {
-    width: 40%;
-    padding: 10px;
-    margin-top: 20px;
-    border: 0;
-    border-radius: 10px;
-    transition: all 0.3s;
-    background-color: rgb(70, 0, 70);
-    color: white;
+	width: 10%;
+	padding: 10px;
+	margin-top: 20px;
+	border: 0;
+	border-radius: 10px;
+	transition: all 0.3s;
+	background-color: rgb(70, 0, 70);
+	color: white;
+	font-size: 1.05em;
 }
 
 .button:hover {
-    background-color: blueviolet;
+	background-color: blueviolet;
 }
 
 @media (max-width: 760px) {
+	section {
+		height: 88vh;
+	}
 
-    section {
-        height: 88vh;
-    }
+	.form-divisao {
+		width: 100%;
+	}
 
-    .form-divisao {
-        width: 100%;
-        
-    }
+	.label {
+		text-indent: 5px;
+	}
 
-    .label {
-        text-indent: 20px;
-    }
+	.input {
+		width: 100%;
+		padding: 6px;
+	}
 
-    .input {
-        width: 90%;
-        padding: 6px;
-    }
+	.div-input {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
 
-    .div-input {
-        display: flex;
-        justify-content: center;
-    }
+	.form {
+		margin: 15px 0;
+		flex-direction: column;
+	}
 
-    
+	.label {
+		display: block;
+	}
+
+	.button {
+		width: 40%;
+	}
 }

@@ -1,220 +1,552 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serviços</title>
-    <link rel="stylesheet" href="./../style/servico.css" />
-    <link
-      rel="shortcut icon"
-      href="../favicon/android-chrome-512x512.png"
-      type="image/x-icon"
-    />
-    <script src="../js/servico.js"></script>
-  </head>
-  <body>
-    <header class="cabecalho">
-      <nav class="menus">
-        <li class="item">
-          <a href="../" class="link-nav">Home</a>
-        </li>
-        <li class="item">
-          <a
-            href="../pdf/Currículo Guilherme G. Suave.pdf"
-            class="link-nav"
-            download="Curriculo Guilherme Suave"
-            >Currículo</a
-          >
-        </li>
-        <li class="item">
-          <a
-            href="https://github.com/GGSuave"
-            class="link-nav"
-            target="_blank"
-            rel="external"
-            >GitHub</a
-          >
-        </li>
-        <li class="item">
-          <a href="./" class="link-nav selecionado">Serviços</a>
-        </li>
-      </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Serviços</title>
+		<link rel="stylesheet" href="./../style/servico.css" />
+		<link
+			rel="shortcut icon"
+			href="../favicon/android-chrome-512x512.png"
+			type="image/x-icon"
+		/>
+		<script src="../js/servico.js"></script>
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="menus">
+				<li class="item">
+					<a href="../" class="link-nav">Home</a>
+				</li>
+				<li class="item">
+					<a
+						href="../pdf/Currículo Guilherme G. Suave.pdf"
+						class="link-nav"
+						download="Curriculo Guilherme Suave"
+						>Currículo</a
+					>
+				</li>
+				<li class="item">
+					<a
+						href="https://github.com/GGSuave"
+						class="link-nav"
+						target="_blank"
+						rel="external"
+						>GitHub</a
+					>
+				</li>
+				<li class="item">
+					<a href="./" class="link-nav selecionado"
+						>Serviços</a
+					>
+				</li>
+			</nav>
+		</header>
 
-    <main>
-      <section>
-        <div class="opcoes">
-          <h2 class="titulo">Selecione o Serviço desejado</h2>
-          <p class="paragrafo">
-            Selecione o serviço que melhor atende às suas necessidades e seja
-            redirecionado para a área de contato!
-          </p>
-          <div class="flex w-full tamanho-padrao-caixa caixa pc">
-            <div class="w-1-3 link-card basic" onclick="contato()">
-              <div>
-                <h1 class="my-1 titulo-card">Basic Site</h1>
-                <div>
-                  <ul class="lista">
-                    <li>&#x2705; Site Estático</li>
-                    <li>&#x2705; 1 a 3 páginas</li>
-                    <li>&#x2705; Design Básico</li>
+		<main>
+			<section>
+				<div class="opcoes">
+					<h2 class="titulo">
+						Selecione o Serviço desejado
+					</h2>
+					<p class="paragrafo">
+						Selecione o serviço que melhor atende às
+						suas necessidades e seja redirecionado para
+						a área de contato!
+					</p>
+					<div
+						class="flex w-full tamanho-padrao-caixa caixa pc"
+					>
+						<div
+							class="w-1-3 link-card basic"
+							onclick="contato()"
+						>
+							<div>
+								<h1 class="my-1 titulo-card">
+									Basic Site
+								</h1>
+								<div>
+									<ul class="lista">
+										<li>
+											&#x2705; Site
+											Estático
+										</li>
+										<li>
+											&#x2705; 1 a 3
+											páginas
+										</li>
+										<li>
+											&#x2705;
+											Design Básico
+										</li>
 
-                    <li>&#x2705; Formulário de Contato Simples</li>
-                    <li>&#x2705; Responsivo (Mobile + Desktop)</li>
-                    <li>&#x274C; Site Dinâmico</li>
-                    <li>&#x274C; Banco de Dados</li>
-                    <li>&#x274C; Painel Administrativo</li>
-                    <li>&#x274C; Integrações (WhatsApp, Instagram etc.)</li>
-                    <li>&#x274C; Hospedagem Inclusa</li>
-                    <li>&#x274C; Suporte Técnico</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="preco-card">R$ 500,00</h3>
-                </div>
-              </div>
-            </div>
-            <div class="w-1-3 link-card premium" onclick="contato()">
-              <div>
-                <h1 class="my-1 titulo-card">Premiun Site</h1>
-                <div>
-                  <ul class="lista">
-                    <li>&#x2705; Site Dinâmico e Avançado</li>
-                    <li>&#x2705; 10 a 15 páginas ou mais</li>
-                    <li>&#x2705; Design Profissional e Responsivo</li>
-                    <li>
-                      &#x2705; Banco de Dados + Painel Administrativo Completo
-                    </li>
-                    <li>&#x2705; Formulários Personalizados com Validação</li>
-                    <li>
-                      &#x2705; Integrações Avançadas (API, Pagamentos, etc.)
-                    </li>
-                    <li>&#x2705; Criptografia de ponta</li>
-                    <li>&#x2705; Otimização para SEO e Desempenho</li>
-                    <li>&#x2705; Hospedagem inclusa (1 ano)</li>
-                    <li>&#x2705; Suporte Técnico Prioritário</li>
-                    <li>&#x2705; Treinamento para uso do painel</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 class="preco-card">
-                    <span class="promo">R$ 4500,00</span>
-                  </h4>
-                  <h2 class="preco-card">R$3.000,00</h2>
-                </div>
-              </div>
-            </div>
-            <div class="w-1-3 link-card intermediate" onclick="contato()">
-              <div>
-                <h1 class="my-1 titulo-card">Intermediate Site</h1>
-                <div>
-                  <ul class="lista">
-                    <li>&#x2705; Site Dinâmico</li>
-                    <li>&#x2705; 4 a 9 páginas</li>
-                    <li>&#x2705; Design Responsivo</li>
+										<li>
+											&#x2705;
+											Formulário de
+											Contato
+											Simples
+										</li>
+										<li>
+											&#x2705;
+											Responsivo
+											(Mobile +
+											Desktop)
+										</li>
+										<li>
+											&#x274C; Site
+											Dinâmico
+										</li>
+										<li>
+											&#x274C; Banco
+											de Dados
+										</li>
+										<li>
+											&#x274C;
+											Painel
+											Administrativo
+										</li>
+										<li>
+											&#x274C;
+											Integrações
+											(WhatsApp,
+											Instagram
+											etc.)
+										</li>
+										<li>
+											&#x274C;
+											Hospedagem
+											Inclusa
+										</li>
+										<li>
+											&#x274C;
+											Suporte
+											Técnico
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h3 class="preco-card">
+										R$ 500,00
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-1-3 link-card premium"
+							onclick="contato()"
+						>
+							<div>
+								<h1 class="my-1 titulo-card">
+									Premiun Site
+								</h1>
+								<div>
+									<ul class="lista">
+										<li>
+											&#x2705; Site
+											Dinâmico e
+											Avançado
+										</li>
+										<li>
+											&#x2705; 10 a
+											15 páginas ou
+											mais
+										</li>
+										<li>
+											&#x2705;
+											Design
+											Profissional e
+											Responsivo
+										</li>
+										<li>
+											&#x2705; Banco
+											de Dados +
+											Painel
+											Administrativo
+											Completo
+										</li>
+										<li>
+											&#x2705;
+											Formulários
+											Personalizados
+											com Validação
+										</li>
+										<li>
+											&#x2705;
+											Integrações
+											Avançadas
+											(API,
+											Pagamentos,
+											etc.)
+										</li>
+										<li>
+											&#x2705;
+											Criptografia
+											de ponta
+										</li>
+										<li>
+											&#x2705;
+											Otimização
+											para SEO e
+											Desempenho
+										</li>
+										<li>
+											&#x2705;
+											Hospedagem
+											inclusa (1
+											ano)
+										</li>
+										<li>
+											&#x2705;
+											Suporte
+											Técnico
+											Prioritário
+										</li>
+										<li>
+											&#x2705;
+											Treinamento
+											para uso do
+											painel
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4 class="preco-card">
+										<span class="promo"
+											>R$
+											4500,00</span
+										>
+									</h4>
+									<h2 class="preco-card">
+										R$3.000,00
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-1-3 link-card intermediate"
+							onclick="contato()"
+						>
+							<div>
+								<h1 class="my-1 titulo-card">
+									Intermediate Site
+								</h1>
+								<div>
+									<ul class="lista">
+										<li>
+											&#x2705; Site
+											Dinâmico
+										</li>
+										<li>
+											&#x2705; 4 a 9
+											páginas
+										</li>
+										<li>
+											&#x2705;
+											Design
+											Responsivo
+										</li>
 
-                    <li>&#x2705; Banco de Dados</li>
-                    <li>&#x2705; Painel Administrativo Simples</li>
-                    <li>&#x2705; Formulários com Validação</li>
-                    <li>&#x2705; Integração com WhatsApp</li>
-                    <li>&#x2705; Otimização para SEO</li>
-                    <li>
-                      &#x274C; Integrações Avançadas (API, Pagamento,etc.)
-                    </li>
-                    <li>&#x274C; Criptografia de ponta</li>
-                    <li>&#x274C; Suporte Prioritário</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="preco-card">R$ 1.500,00</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex w-full tamanho-padrao-caixa caixa mobile">
-            <div class="w-1-3 link-card premium" onclick="contato()">
-              <div>
-                <h1 class="my-1 titulo-card">Premiun Site</h1>
-                <div>
-                  <ul class="lista">
-                    <li>&#x2705; Site Dinâmico e Avançado</li>
-                    <li>&#x2705; 10 a 15 páginas ou mais</li>
-                    <li>&#x2705; Design Profissional e Responsivo</li>
-                    <li>
-                      &#x2705; Banco de Dados + Painel Administrativo Completo
-                    </li>
-                    <li>&#x2705; Formulários Personalizados com Validação</li>
-                    <li>
-                      &#x2705; Integrações Avançadas (API, Pagamentos, etc.)
-                    </li>
-                    <li>&#x2705; Criptografia de ponta</li>
-                    <li>&#x2705; Otimização para SEO e Desempenho</li>
-                    <li>&#x2705; Hospedagem inclusa (1 ano)</li>
-                    <li>&#x2705; Suporte Técnico Prioritário</li>
-                    <li>&#x2705; Treinamento para uso do painel</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 class="preco-card">
-                    <span class="promo">R$ 4500,00</span>
-                  </h4>
-                  <h2 class="preco-card">R$3.000,00</h2>
-                </div>
-              </div>
-            </div>
-            <div class="w-1-3 link-card intermediate" onclick="contato()">
-              <div>
-                <h1 class="my-1 titulo-card">Intermediate Site</h1>
-                <div>
-                  <ul class="lista">
-                    <li>&#x2705; Site Dinâmico</li>
-                    <li>&#x2705; 4 a 9 páginas</li>
-                    <li>&#x2705; Design Responsivo</li>
+										<li>
+											&#x2705; Banco
+											de Dados
+										</li>
+										<li>
+											&#x2705;
+											Painel
+											Administrativo
+											Simples
+										</li>
+										<li>
+											&#x2705;
+											Formulários
+											com Validação
+										</li>
+										<li>
+											&#x2705;
+											Integração com
+											WhatsApp
+										</li>
+										<li>
+											&#x2705;
+											Otimização
+											para SEO
+										</li>
+										<li>
+											&#x274C;
+											Integrações
+											Avançadas
+											(API,
+											Pagamento,etc.)
+										</li>
+										<li>
+											&#x274C;
+											Criptografia
+											de ponta
+										</li>
+										<li>
+											&#x274C;
+											Suporte
+											Prioritário
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h3 class="preco-card">
+										R$ 1.500,00
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="flex w-full tamanho-padrao-caixa caixa mobile"
+					>
+						<div
+							class="w-1-3 link-card premium"
+							onclick="contato()"
+						>
+							<div>
+								<h1 class="my-1 titulo-card">
+									Premiun Site
+								</h1>
+								<div>
+									<ul class="lista">
+										<li>
+											&#x2705; Site
+											Dinâmico e
+											Avançado
+										</li>
+										<li>
+											&#x2705; 10 a
+											15 páginas ou
+											mais
+										</li>
+										<li>
+											&#x2705;
+											Design
+											Profissional e
+											Responsivo
+										</li>
+										<li>
+											&#x2705; Banco
+											de Dados +
+											Painel
+											Administrativo
+											Completo
+										</li>
+										<li>
+											&#x2705;
+											Formulários
+											Personalizados
+											com Validação
+										</li>
+										<li>
+											&#x2705;
+											Integrações
+											Avançadas
+											(API,
+											Pagamentos,
+											etc.)
+										</li>
+										<li>
+											&#x2705;
+											Criptografia
+											de ponta
+										</li>
+										<li>
+											&#x2705;
+											Otimização
+											para SEO e
+											Desempenho
+										</li>
+										<li>
+											&#x2705;
+											Hospedagem
+											inclusa (1
+											ano)
+										</li>
+										<li>
+											&#x2705;
+											Suporte
+											Técnico
+											Prioritário
+										</li>
+										<li>
+											&#x2705;
+											Treinamento
+											para uso do
+											painel
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4 class="preco-card">
+										<span class="promo"
+											>R$
+											4500,00</span
+										>
+									</h4>
+									<h2 class="preco-card">
+										R$3.000,00
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-1-3 link-card intermediate"
+							onclick="contato()"
+						>
+							<div>
+								<h1 class="my-1 titulo-card">
+									Intermediate Site
+								</h1>
+								<div>
+									<ul class="lista">
+										<li>
+											&#x2705; Site
+											Dinâmico
+										</li>
+										<li>
+											&#x2705; 4 a 9
+											páginas
+										</li>
+										<li>
+											&#x2705;
+											Design
+											Responsivo
+										</li>
 
-                    <li>&#x2705; Banco de</li>
-                    <li>&#x2705; Painel Administrativo Simples</li>
-                    <li>&#x2705; Formulários com Validação</li>
-                    <li>&#x2705; Integração com WhatsApp</li>
-                    <li>&#x2705; Otimização para SEO</li>
-                    <li>
-                      &#x274C; Integrações Avançadas (API, Pagamento,etc.)
-                    </li>
-                    <li>&#x274C; Criptografia de ponta</li>
-                    <li>&#x274C; Suporte Prioritário</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="preco-card">R$ 1.500,00</h3>
-                </div>
-              </div>
-            </div>
-            <div class="w-1-3 link-card basic" onclick="contato()">
-              <div>
-                <h1 class="my-1 titulo-card">Basic Site</h1>
-                <div>
-                  <ul class="lista">
-                    <li>&#x2705; Site Estático</li>
-                    <li>&#x2705; 1 a 3 páginas</li>
-                    <li>&#x2705; Design Básico</li>
+										<li>
+											&#x2705; Banco
+											de
+										</li>
+										<li>
+											&#x2705;
+											Painel
+											Administrativo
+											Simples
+										</li>
+										<li>
+											&#x2705;
+											Formulários
+											com Validação
+										</li>
+										<li>
+											&#x2705;
+											Integração com
+											WhatsApp
+										</li>
+										<li>
+											&#x2705;
+											Otimização
+											para SEO
+										</li>
+										<li>
+											&#x274C;
+											Integrações
+											Avançadas
+											(API,
+											Pagamento,etc.)
+										</li>
+										<li>
+											&#x274C;
+											Criptografia
+											de ponta
+										</li>
+										<li>
+											&#x274C;
+											Suporte
+											Prioritário
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h3 class="preco-card">
+										R$ 1.500,00
+									</h3>
+								</div>
+							</div>
+						</div>
+						<div
+							class="w-1-3 link-card basic"
+							onclick="contato()"
+						>
+							<div>
+								<h1 class="my-1 titulo-card">
+									Basic Site
+								</h1>
+								<div>
+									<ul class="lista">
+										<li>
+											&#x2705; Site
+											Estático
+										</li>
+										<li>
+											&#x2705; 1 a 3
+											páginas
+										</li>
+										<li>
+											&#x2705;
+											Design Básico
+										</li>
 
-                    <li>&#x2705; Formulário de Contato Simples</li>
-                    <li>&#x2705; Responsivo (Mobile + Desktop)</li>
-                    <li>&#x274C; Site Dinâmico</li>
-                    <li>&#x274C; Banco de Dados</li>
-                    <li>&#x274C; Painel Administrativo</li>
-                    <li>&#x274C; Integrações (WhatsApp, Instagram etc.)</li>
-                    <li>&#x274C; Hospedagem Inclusa</li>
-                    <li>&#x274C; Suporte Técnico</li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 class="preco-card">R$ 500,00</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+										<li>
+											&#x2705;
+											Formulário de
+											Contato
+											Simples
+										</li>
+										<li>
+											&#x2705;
+											Responsivo
+											(Mobile +
+											Desktop)
+										</li>
+										<li>
+											&#x274C; Site
+											Dinâmico
+										</li>
+										<li>
+											&#x274C; Banco
+											de Dados
+										</li>
+										<li>
+											&#x274C;
+											Painel
+											Administrativo
+										</li>
+										<li>
+											&#x274C;
+											Integrações
+											(WhatsApp,
+											Instagram
+											etc.)
+										</li>
+										<li>
+											&#x274C;
+											Hospedagem
+											Inclusa
+										</li>
+										<li>
+											&#x274C;
+											Suporte
+											Técnico
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h3 class="preco-card">
+										R$ 500,00
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
