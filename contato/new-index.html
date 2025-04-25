@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Contato</title>
+		<link rel="stylesheet" href="../style/contato.css" />
+	</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="menus">
+				<li class="item">
+					<a href="../" class="link-nav">Home</a>
+				</li>
+				<li class="item">
+					<a
+						href="../pdf/Currículo Guilherme G. Suave.pdf"
+						class="link-nav"
+						download="Curriculo Guilherme Suave"
+						>Currículo</a
+					>
+				</li>
+				<li class="item">
+					<a
+						href="https://github.com/GGSuave"
+						class="link-nav"
+						target="_blank"
+						rel="external"
+						>GitHub</a
+					>
+				</li>
+				<li class="item">
+					<a
+						href="../servicos/"
+						class="link-nav selecionado"
+						>Serviços</a
+					>
+				</li>
+			</nav>
+		</header>
+		<main>
+			<section class="flex-col w-full centralizado caixa">
+				<div class="caixa-contato">
+					<div class="cabecalho-contato">
+						<h2 class="titulo-contato">Contato</h2>
+					</div>
+					<div>
+						<form class="w-full flex form">
+							<div class="flex w-full gap-1">
+								<div class="form-divisao">
+									<label
+										for="nome"
+										class="label"
+										>Nome
+									</label>
+									<div class="div-input">
+										<input
+											type="text"
+											id="nome"
+											required
+											class="input"
+										/>
+									</div>
+								</div>
+								<div class="form-divisao">
+									<label
+										for="email"
+										class="label"
+										>Email
+									</label>
+									<div class="div-input">
+										<input
+											type="email"
+											id="email"
+											class="input"
+											required
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="flex w-full gap-1">
+								<div class="form-divisao">
+									<label
+										for="tipoPessoa"
+										class="label"
+										>Escolha o tipo de
+										pessoa
+									</label>
+									<div class="div-input">
+										<select
+											id="tipoPessoa"
+											name="tipoPessoa"
+											class="input"
+											required
+										>
+											<option
+												value="fisica"
+												selected
+											>
+												Pessoa
+												Física
+											</option>
+											<option
+												value="juridica"
+											>
+												Pessoa
+												Jurídica
+											</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-divisao">
+									<label
+										for="cpf"
+										class="label"
+										>CPF/CNPJ
+									</label>
+									<div class="div-input">
+										<input
+											type="text"
+											id="cpf"
+											class="input"
+											required
+											placeholder="XXX.XXX.XXX-XX ou XX.XXX.XXX/0001-XX"
+										/>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
